@@ -18,6 +18,10 @@
 		0DD6C06F1787543B000C062A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD6C06E1787543B000C062A /* Default-568h@2x.png */; };
 		0DD6C0721787543B000C062A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD6C0701787543B000C062A /* MainStoryboard.storyboard */; };
 		0DD6C0751787543B000C062A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6C0741787543B000C062A /* ViewController.m */; };
+		0DD6C07C17875464000C062A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD6C07B17875464000C062A /* AVFoundation.framework */; };
+		0DD6C07E1787546C000C062A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD6C07D1787546C000C062A /* CoreVideo.framework */; };
+		0DD6C08017875474000C062A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD6C07F17875474000C062A /* CoreMedia.framework */; };
+		0DD6C08217875495000C062A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD6C08117875495000C062A /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		0DD6C0711787543B000C062A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0DD6C0731787543B000C062A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0DD6C0741787543B000C062A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0DD6C07B17875464000C062A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0DD6C07D1787546C000C062A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0DD6C07F17875474000C062A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0DD6C08117875495000C062A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD6C08217875495000C062A /* AssetsLibrary.framework in Frameworks */,
+				0DD6C08017875474000C062A /* CoreMedia.framework in Frameworks */,
+				0DD6C07E1787546C000C062A /* CoreVideo.framework in Frameworks */,
+				0DD6C07C17875464000C062A /* AVFoundation.framework in Frameworks */,
 				0DD6C0591787543A000C062A /* UIKit.framework in Frameworks */,
 				0DD6C05B1787543A000C062A /* Foundation.framework in Frameworks */,
 				0DD6C05D1787543A000C062A /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +68,10 @@
 		0DD6C04C17875439000C062A = {
 			isa = PBXGroup;
 			children = (
+				0DD6C08117875495000C062A /* AssetsLibrary.framework */,
+				0DD6C07F17875474000C062A /* CoreMedia.framework */,
+				0DD6C07D1787546C000C062A /* CoreVideo.framework */,
+				0DD6C07B17875464000C062A /* AVFoundation.framework */,
 				0DD6C05E1787543A000C062A /* Video */,
 				0DD6C0571787543A000C062A /* Frameworks */,
 				0DD6C0561787543A000C062A /* Products */,
@@ -213,7 +229,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kenjiro Hiramatsu (XL2SFR79CV)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -228,6 +244,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "107B3EA4-EB58-4D58-A0BD-0ED98F483AF7";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -260,10 +277,12 @@
 		0DD6C0791787543B000C062A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kenjiro Hiramatsu (XL2SFR79CV)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Video/Video-Prefix.pch";
 				INFOPLIST_FILE = "Video/Video-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "107B3EA4-EB58-4D58-A0BD-0ED98F483AF7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -298,6 +317,7 @@
 				0DD6C07A1787543B000C062A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
